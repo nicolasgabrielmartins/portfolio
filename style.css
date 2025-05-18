@@ -63,6 +63,10 @@ section{
     padding-bottom: 15dvh;
 }
 
+.profile-pic{
+    border-radius: 50%;
+}
+
 .section__pic-container{
     display: flex;
     height: 60dvh;
@@ -143,10 +147,15 @@ section{
 }
 
 /*ABOUT*/  
+#about{
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 .section-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 80vh;
 
@@ -155,29 +164,28 @@ section{
 .section__title__about{
     display: flex;
     justify-content: center;
-    margin: 2rem 0 4rem 0;
-
+    
 }
 
 .title__about{
     font-size: 3rem;
-    text-align: center;
+    text-align: right;
 }
 
 .details-container{
     display: flex;
-    height: 60dvh;
-    width: 60dvh;
+    height: 50dvh;
+    width: 50dvh;
     margin: auto 0 ;    
     
 }
 
 .text-container{
     align-self: center;
-    text-align: left;
+    text-align: right;
 }
 
 .image-container{
-    border-radius: 50%;
+    border-radius: 10%;
     display: flex;
 }
