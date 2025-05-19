@@ -44,9 +44,9 @@ nav {
 
 /*SECTIONS*/
 section{
-    padding-top: -10%;
+    padding-top: -0%;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -60,7 +60,6 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 100vh;
-    padding-bottom: 15dvh;
 }
 
 .profile-pic{
@@ -75,6 +74,9 @@ section{
 }
 
 .section__text{
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
+    border-radius: 10%;
     align-self: center;
     text-align: center;
 }
@@ -108,7 +110,7 @@ section{
 #socials-container{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1rem;
     gap: 1rem;
 }
 
@@ -146,10 +148,12 @@ section{
     border: rgb(133, 133, 133) 0.1rem solid;
 }
 
-/*ABOUT*/  
+/*ABOUT*/
+
 #about{
     margin-left: 20%;
     margin-right: 20%;
+    height: auto;
 }
 
 .section-container{
@@ -157,7 +161,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    height: 80vh;
+    padding: 3rem;
+    height: auto;
 
 }
 
@@ -168,6 +173,8 @@ section{
 }
 
 .title__about{
+    display: flex;
+    justify-self: center;
     font-size: 3rem;
     text-align: right;
 }
@@ -182,10 +189,57 @@ section{
 
 .text-container{
     align-self: center;
-    text-align: right;
+    text-align: center;
+    font-size: 120%;
 }
 
 .image-container{
     border-radius: 10%;
     display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*EXPERIENCE*/
+section#experiencia{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+/*PROJECTS*/
+section#projeto{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+    background-color: rgb(131, 127, 255);
+}
+
+/*CONTACT*/
+section#contato{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+    background-color: rgb(255, 127, 161);
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    padding: 5dvh;
+    justify-items: center;
+    justify-self: center;
 }
