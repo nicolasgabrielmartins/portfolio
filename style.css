@@ -13,6 +13,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/*NAVBAR*/
 a, 
 .btn{
     transition: all 300ms ease;
@@ -27,25 +29,51 @@ a:hover{
 nav,.nav-links{
     display: flex;
     font-size: x-large;
-    flex-direction: row-reverse;
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
     background: transparent;
 }
 
 .nav-links{
-    gap: 3rem;
+    gap: 4vw;
     list-style: none;
 }
 
-/*SECTIONS*/
-section{
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        padding: 2vw;
+    }
+
+    .nav-links {
+        gap: 2vw; /* Reduz o gap */
+        margin-top: 10px; /* Espaçamento entre o logo e os links */
+    }
+
+    .nav-links li a {
+        font-size: clamp(1rem, 4vw, 1.5rem); /* Ajusta o tamanho da fonte para telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        gap: 2vw; 
+    }
+    .nav-links li a {
+        font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    }
+    .logo {
+        font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+    }
+}
+
+/*PERFIL*/
+section.profile{
     padding-top: -0%;
-    height: 96vh;
     margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -58,8 +86,22 @@ section{
 #profile{
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 100vh;
+    gap: 3vh;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) {
+    #profile{
+    gap: 5vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #profile{
+        height: 75vh;
+        padding-top: 4vh;
+    }
 }
 
 .profile-pic{
@@ -68,9 +110,15 @@ section{
 
 .section__pic-container{
     display: flex;
-    height: 60dvh;
-    width: 60dvh;
+    width: auto;
+    height: 40vh;
     margin: auto 0 ;
+}
+
+@media screen and (max-width: 480px) {
+    .section__pic-container {
+        height: 25vh;
+    }
 }
 
 .section__text{
@@ -81,17 +129,12 @@ section{
     text-align: center;
 }
 
-.section__text p{
-    font-weight: 600;
-}
+
 
 .section__text__p1{
     text-align: center;
+    font-size: 2rem;
     color: rgb(85, 85, 85);
-}
-
-.section__text__p1{
-    font-size: 1.75rem;
     margin-bottom: -1rem;
 }
 
@@ -103,7 +146,7 @@ section{
 }
 
 .title{
-    font-size: 7rem;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -203,6 +246,88 @@ section{
 
 
 
+#projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh; /* Ajuste o padding conforme necessário */
+    background-color: #ffffff; /* Um fundo diferente para destacar */
+    height: auto;
+}
+
+.title-section {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    color: #333;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid; /* Usamos Grid para organizar os cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 1vh; /* Espaçamento entre os cards */
+    min-width: 6ch; /* Largura do seu grid de projetos */
+    max-width: 80%;
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para empurrar o link para baixo */
+    text-align: left; /* Alinhar o texto à esquerda dentro do card */
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px; /* Menor margem entre os parágrafos de info */
+}
+
+.project-card .languages {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* Margem para separar das linguagens do link */
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px; /* Margem para separar do texto acima */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    align-self: flex-start; /* Alinha o botão à esquerda dentro do card */
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+}
+
+.loading-message {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #777;
+    grid-column: 1 / -1; /* Para centralizar a mensagem em todo o grid */
+}
+
+
 
 
 
@@ -212,29 +337,21 @@ section{
 section#experiencia{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 100vh;
-    background-color: aquamarine;
-}
-
-/*PROJECTS*/
-section#projeto{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 100vh;
-    background-color: rgb(131, 127, 255);
+    background-color: rgb(210, 210, 210);
 }
 
 /*CONTACT*/
 section#contato{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     height: 100vh;
-    background-color: rgb(255, 127, 161);
+    background-color: rgb(210, 210, 210);
 }
-
 
 /*FOOTER*/
 footer{
