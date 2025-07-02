@@ -39,16 +39,16 @@
         setInterval(() => {
         hiText.textContent = greetings[index];
         index = (index + 1) % greetings.length;
-        }, 800); // Change every 500ms
+        }, 800);
 
-        // Clique para iniciar a transição
+        
         document.body.addEventListener("click", () => {
         const overlay = document.getElementById("overlay");
         overlay.classList.add("expand");
         
         setTimeout(() => {
             window.location.href = "homepage.html";
-        }, 800); // igual ao tempo da transição CSS
+        }, 800); 
         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
