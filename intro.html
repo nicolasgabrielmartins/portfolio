@@ -15,9 +15,9 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-aos="zoom-in">
     <div class="transition-overlay" id="overlay"></div>
-    <div class="logo">
+    <div class="logo" >
         <div class="name">Nicolas Gabriel </div>
         <div class="title_name">/ Developer</div>
     </div>
@@ -26,30 +26,34 @@
 
 
 <!-- JAVASCRIPT -->
-<script>
-    const greetings = [
-      "Hi", "Hola", "Bonjour", "Hallo", "Ciao", "Olá", "Привет",
-      "こんにちは", "你好", "안녕하세요", "Salam", "Hej", "Halo", "Merhaba",
-      "नमस्ते", "Sawubona", "Selam", "ሰላም", "שלום", "வணக்கம்", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"
-    ];
+    <script>
+        const greetings = [
+        "Olá", "Hi", "Hola", "Bonjour", "Hallo", "Ciao", "Привет",
+        "こんにちは", "你好", "안녕하세요", "Salam", "Hej", "Halo", "Merhaba",
+        "नमस्ते", "Sawubona", "Selam", "ሰላም", "שלום", "வணக்கம்", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"
+        ];
 
-    const hiText = document.getElementById("center-text");
-    let index = 0;
+        const hiText = document.getElementById("center-text");
+        let index = 0;
 
-    setInterval(() => {
-      hiText.textContent = greetings[index];
-      index = (index + 1) % greetings.length;
-    }, 700); // Change every 500ms
+        setInterval(() => {
+        hiText.textContent = greetings[index];
+        index = (index + 1) % greetings.length;
+        }, 800); // Change every 500ms
 
-    // Clique para iniciar a transição
-    document.body.addEventListener("click", () => {
-      const overlay = document.getElementById("overlay");
-      overlay.classList.add("expand");
-      
-      setTimeout(() => {
-        window.location.href = "index.html";
-      }, 800); // igual ao tempo da transição CSS
-    });
-  </script>
+        // Clique para iniciar a transição
+        document.body.addEventListener("click", () => {
+        const overlay = document.getElementById("overlay");
+        overlay.classList.add("expand");
+        
+        setTimeout(() => {
+            window.location.href = "homepage.html";
+        }, 800); // igual ao tempo da transição CSS
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
