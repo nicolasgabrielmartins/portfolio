@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*<div id="navbar">
+        <div class="logo">
+            <div class="name">Nicolas Gabriel </div>
+            <div class="title_name">/ Developer</div>
+        </div>
+        <div class="menu">
+            <div class="curriculo">Curriculo</div>
+            <div class="contato">Contato</div>
+        </div>
+    </div>
+*/
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f2f2f2;
+    color: #262626;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+        font-size: 1dvw;
+        padding: 3dvh;
+        .name{
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .title_name{
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            color: #a1a4a6;
+            font-style: italic;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        gap: 15vh;
+        font-size: 1dvw;
+        padding: 3dvh;
+    }
+
+}
