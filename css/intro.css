@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e1e1e1;
+    color: #c74242;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    margin: 0;
+}
+
+#center-text {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 5dvw;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    font-size: 1dvw;
+    padding: 3dvh;
+    .name{
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .title_name{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        color: #a1a4a6;
+        font-style: italic;
+    }
+}
+
+#bottom_text{
+    gap: 1rem;
+    font-size: 1dvw;
+    padding: 3dvh;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    span{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        color: #a1a4a6;
+        font-style: italic;
+    }
+}
+
+.transition-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      transition: width 0.8s ease-out, height 0.8s ease-out;
+    }
+
+    .transition-overlay.expand {
+      width: 3000px;
+      height: 3000px;
+    }
+
+@keyframes fade {
+from { opacity: 0.3; }
+to { opacity: 1; }
+}
