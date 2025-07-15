@@ -153,6 +153,19 @@ body {
           .card:nth-child(4) {
             background: #2D5C38;
           }
+
+          .card:nth-child(1):hover {
+            animation: shake 2s infinite;
+          }
+          .card:nth-child(2):hover {
+            animation: shake 2s infinite;
+          }
+          .card:nth-child(3):hover {
+            animation: shake 2s infinite;
+          }
+          .card:nth-child(4):hover {
+            animation: shake 2s infinite;
+          }
     
           /*Styling for the card content starts here...*/
           .card {
@@ -273,7 +286,12 @@ body {
     }
     }
 }
-
+@keyframes shake {
+  10% {transform: scale(1.06) rotate(5deg);}
+  20% {transform: scale(1.06) rotate(-5deg);}
+  30% {transform: scale(1.06) rotate(5deg);}
+  40% {transform: none;}
+}
 
 
 /* Scroll Indicator Dots */
