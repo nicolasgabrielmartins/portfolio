@@ -346,10 +346,10 @@ body {
             cursor: pointer;
           }
           .card:nth-child(1) {
-            background:#7f27f2;
+            background:#bba232;
           }
           .card:nth-child(2) {
-            background:rgb(5, 100, 37);
+            background:rgb(5, 100, 13);
           }
           }
 
@@ -441,19 +441,6 @@ body {
             transition: 0.5s ease-in-out;
             cursor: pointer;
           }
-          .card:nth-child(1) {
-            background:#F2274C;
-          }
-          .card:nth-child(2) {
-            background:#00689B;
-          }
-          .card:nth-child(3) {
-            background: #D99543;
-          }
-          .card:nth-child(4) {
-            background: #2D5C38;
-          }
-          
 
           }
     
