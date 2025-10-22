@@ -24,9 +24,10 @@
                     <div class="title_name">/ Developer</div>
                 </div>
                 <div class="menu">
-                    <div class="curriculo">Curriculo</div>
-                    <div class="contato">Contato</div>
-                    <img src="../assets/images/profile-pic.png" alt="" style="height: 5vh; width:auto;">
+                    <div class="curriculo">Projetos</div>
+                    <div class="contato">Experiencia</div>
+                    <div class="curriculo">Contato</div>
+                    <div class="contato">Curriculo</div>
                 </div>
             </div>
 
@@ -43,15 +44,15 @@
                 <div class="left">
                     <div class="text-container">
                         <h1>Projetos</h1>
-                        <p>/<span class="typed"></span></p>
+                        <p>/<span class="pessoais"></span></p>
                     </div>
                 </div>
                 <div class="right">
                     <div class="grid-container">
                         <div class="card">
-                            <div class="sub">/html /css /js</div>
+                            <div class="sub">/spring/angular/mysql</div>
                             <div class="title">
-                                <div class="content">Portfólio</div>
+                                <div class="content">Rede de Apoio</div>
                             </div>
                         </div>
                         <div class="card">
@@ -60,13 +61,13 @@
                                 <div class="content">NBA Connect</div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" href="https://github.com/nicolasgabrielmartins/music-search-with-the-genius-API">
                             <div class="sub">/python</div>
                             <div class="title">
                                 <div class="content">Music Search</div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" href="https://github.com/nicolasgabrielmartins/players-stats">
                             <div class="sub">/java</div>
                             <div class="title">
                                 <div class="content">Player Stats</div>
@@ -101,51 +102,42 @@
                 <div class="left">
                     <div class="text-container">
                         <h1>Experiências</h1>
-                        <p>/<span class="typed2"></span></p>
+                        <p>/<span class="profissionais"></span></p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="section" id="section4">
+
+        <div class="section" id="linguagens-ferramentas">
             <div class="stack-area">
-                <div class="title-area">
+                <div class="left">
                     <div class="text-container">
-                        <h1>Sobre Mim</h1>
-                        <p>/<span class="typed3"></span></p>
+                        <h1>Linguagens</h1>
+                        <p>/<span class="linguagens"></span></p>
                     </div>
                 </div>
-                <div class="content-area">
-                    <div class="info-about-me">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </div>
-                </div>
-            </div>   
-        </section>
-        <section class="section" id="section5">
-            <div class="stack-area">
-                <div class="title-area">
-                    <div class="text-container">
-                        <h1>Sobre Mim</h1>
-                        <p>/<span class="typed3"></span></p>
-                    </div>
-                </div>
-                <div class="content-area">
-                    <div class="info-card">
-                        <div class="info">
-                            <div class="label">Nome:</div>
-                            <div class="data">Nicolas Gabriel Silva</div>
+                <div class="right">
+                    <div class="grid-container">
+                        <div class="card">
+                            <div class="sub">/Estágio (2022-2024)</div>
+                            <div class="title">
+                                <div class="content">Ericsson</div>
+                            </div>
+                            <div class="bottom-text">Telecomunicações</div>
                         </div>
-                        <div class="info">
-                            <div class="label">Idade:</div>
-                            <div class="data">20 anos</div>
+                        <div class="card">
+                            <div class="sub">/Estágio (2025-Atual)</div>
+                            <div class="title">
+                                <div class="content">MPT</div>
+                            </div>
+                            <div class="bottom-text">Ministerio Publico do Trabalho</div>
                         </div>
-                        <div class="info">
-                            <div class="label">Email:</div>
-                            <div class="data">
+                        
+                    </div>
                 </div>
-            </div>   
-        </section>
+            </div>
+        </div>
 
   <div class="scroll-indicator">
     <div class="dot" data-index="0"></div>
@@ -168,7 +160,7 @@
     })
     </script>
     <script>
-      var type2 = new Typed(".typed",{
+      var type2 = new Typed(".pessoais",{
       strings : ["pessoais"],
       typeSpeed : 150,
       backSpeed : 70,
@@ -176,7 +168,7 @@
     })
     </script>
     <script>
-      var experienciaProfissional = new Typed(".typed2",{
+      var type2 = new Typed(".profissionais",{
       strings : ["profissionais"],
       typeSpeed : 150,
       backSpeed : 70,
@@ -184,8 +176,8 @@
     })
     </script>
     <script>
-      var experienciaProfissional = new Typed(".typed3",{
-      strings : ["Informações Pessoais"],
+      var experienciaProfissional = new Typed(".linguagens",{
+      strings : ["linguagens e ferramentas"],
       typeSpeed : 150,
       backSpeed : 70,
       loop : true
