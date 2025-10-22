@@ -30,7 +30,7 @@ body {
 }
 
 /* Home */
-#section1{
+#homepage{
     #navbar{
         display: flex;
         flex-direction: row;
@@ -60,7 +60,7 @@ body {
         .menu{
             display: flex;
             flex-direction: row;
-            gap: 15vh;
+            gap: 10vw;
             font-size: 1dvw;
             padding: 3dvh;
         }
@@ -94,7 +94,7 @@ body {
 }
 
 /* Projects */
-#section2{
+#projetos{
     background-color: #262626;
     height: 100vh;
     align-content: center;
@@ -199,7 +199,12 @@ body {
         }
       }
     }
-    @media (orientation: portrait) {
+    
+}
+
+@media (orientation: portrait) {
+  #projetos{
+    height: 50vh;
       .stack-area{
       display: flex;
       flex-direction: column;
@@ -229,7 +234,7 @@ body {
       .right {
         display:flex;
         width: 100dvw;
-        padding: 10vw;
+        padding: 5vw;
         .grid-container{
           display: grid;
           width: 100%;
@@ -289,10 +294,10 @@ body {
           }
         }
       }
-    }
-    }
+  }
+}
 
-#section3{
+#experiencias{
     background-color: #262626;
     height: 100vh;
     align-content: center;
@@ -304,8 +309,7 @@ body {
       width: 100%;  
       .left {
         display: flex;
-        padding-right: 15dvw;
-        flex-basis: 30%;
+        flex-basis: 50%;
         height: 100%;
         h1{
             font-size: 5dvw;
@@ -325,7 +329,7 @@ body {
       }
       .right {
         display:flex;
-        flex-basis: 70%;
+        flex-basis: 50%;
         padding: 10vw;
         .grid-container{
           display: grid;
@@ -342,28 +346,14 @@ body {
             cursor: pointer;
           }
           .card:nth-child(1) {
-            background:#F2274C;
+            background:#7f27f2;
           }
           .card:nth-child(2) {
-            background:#00689B;
+            background:rgb(5, 100, 37);
           }
-          .card:nth-child(3) {
-            background: #D99543;
-          }
-          .card:nth-child(4) {
-            background: #2D5C38;
           }
 
-          .card:nth-child(1):hover {
-            animation: shake 2s infinite;
-          }
-          .card:nth-child(2):hover {
-            animation: shake 2s infinite;
-          }
-          .card:nth-child(3):hover {
-            animation: shake 2s infinite;
-          }
-          .card:nth-child(4):hover {
+          .card:hover {
             animation: shake 2s infinite;
           }
     
@@ -403,8 +393,10 @@ body {
           }
         }
       }
-    }
-    @media (orientation: portrait) {
+}
+@media (orientation: portrait) {
+  #experiencias{
+    height: 50vh;
       .stack-area{
       display: flex;
       flex-direction: column-reverse;
@@ -434,7 +426,7 @@ body {
       .right {
         display:flex;
         width: 100dvw;
-        padding: 10vw;
+        padding: 5vw;
         .grid-container{
           display: grid;
           width: 100%;
@@ -460,6 +452,9 @@ body {
           }
           .card:nth-child(4) {
             background: #2D5C38;
+          }
+          
+
           }
     
           /*Styling for the card content starts here...*/
@@ -491,8 +486,7 @@ body {
           }
         }
       }
-    }
-    }
+  }
 }
 
 #linguagens-ferramentas{
@@ -546,16 +540,16 @@ body {
             cursor: pointer;
           }
           .card:nth-child(1) {
-            background:#F2274C;
+            background:#f22786;
           }
           .card:nth-child(2) {
             background:#00689B;
           }
           .card:nth-child(3) {
-            background: #D99543;
+            background: #a243d9;
           }
           .card:nth-child(4) {
-            background: #2D5C38;
+            background: #48b9a1;
           }
 
           .card:nth-child(1):hover {
@@ -611,7 +605,7 @@ body {
     @media (orientation: portrait) {
       .stack-area{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;  
@@ -652,18 +646,6 @@ body {
             position: relative;
             transition: 0.5s ease-in-out;
             cursor: pointer;
-          }
-          .card:nth-child(1) {
-            background:#F2274C;
-          }
-          .card:nth-child(2) {
-            background:#00689B;
-          }
-          .card:nth-child(3) {
-            background: #D99543;
-          }
-          .card:nth-child(4) {
-            background: #2D5C38;
           }
     
           /*Styling for the card content starts here...*/
